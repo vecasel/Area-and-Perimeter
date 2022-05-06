@@ -33,9 +33,55 @@
         </section>
         <section class="triangle__section">
             <p class="triangle__section__title">Triángulo</p>
+            <p class="triangle__section__subtitle">Por favor ingresa los lados del triángulo y escoge lo que quieres calcular (Ten en cuenta que el calculo es para un triángulo):</p>
+            <form class="formt">
+                <label for="lado1t" class="lado1t">
+                    Indica la medida del primer lado
+                    <input type="number" id="lado1t">
+                </label>
+                <label for="lado2t" class="lado2t">
+                    Indica la medida del segundo lado
+                    <input type="number" id="lado2t">
+                </label>
+                <label for="lado3t" class="lado3t">
+                    Indica la medida de la base
+                    <input type="number" id="lado3t">
+                </label>
+                <button class="button1t" type="button" onclick="perimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+                <button class="button2t" type="button" onclick="areaTriangulo()">
+                    Calcular el área
+                </button>
+                <button class="button3t" type="button" onclick="alturaTriangulo()">
+                    Calcular la altura
+                </button>
+            </form>
+            <div class="result__sectiont">
+                <p id="print__triangle"></p>
+            </div>
         </section>
         <section class="circle__section">
             <p class="circle__section__title">Circulo</p>
+            <p class="circle__section__subtitle">Por favor ingresa los datos del circulo y escoge lo que quieres calcular:</p>
+            <form class="formc">
+                <label for="lado1c" class="lado1c">
+                    Indica la medida del radio
+                    <input type="number" id="lado1c">
+                </label>
+                <button class="button1c" type="button" onclick="diametroCirculo()">
+                    Calcular el diametro
+                </button>
+                <button class="button2c" type="button" onclick="circunferencia()">
+                    Calcular la circunferencia
+                </button>
+                <button class="button3c" type="button" onclick="areaCirculo()">
+                    Calcular el área
+                </button>
+            </form>
+            <div class="result__sectionc">
+                <p id="print__circle"></p>
+            </div>
         </section>
     </main>
     <script src="index.js"></script>
