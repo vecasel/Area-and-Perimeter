@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header__container">
+        <h1>Figuras Geométricas</h1>
+    </header>
+    <main class="main__container">
+        <section class="square__section">
+            <p class="square__section__title">Cuadrado</p>
+            <p class="square__section__subtitle">Por favor ingresa los lados del cuadrado y escoge lo que quieres calcular:</p>
+            <form class="form">
+                <label for="lado1" class="lado1">
+                    Indica la medida del lado
+                    <input type="number" id="lado1">
+                </label>
+                <button class="button1" type="button" onclick="perimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+                <button class="button2" type="button" onclick="areaCuadrado()">
+                    Calcular el área
+                </button>
+            </form>
+            <div class="result__section">
+                <p id="print__square"></p>
+            </div>
+        </section>
+        <section class="triangle__section">
+            <p class="triangle__section__title">Triángulo</p>
+        </section>
+        <section class="circle__section">
+            <p class="circle__section__title">Circulo</p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
