@@ -55,41 +55,14 @@ function diametroCirculo(){
     return resultado;
 }
 
+
 function circunferencia(){
     var resultado = diametroCirculo() * Math.PI;
     document.getElementById("print__circle").innerHTML = resultado.toFixed(3) + "cm.";
 }
 
+
 function areaCirculo(){
     var resultado = Math.pow(parseInt(document.getElementById("lado1c").value), 2) * Math.PI;
     document.getElementById("print__circle").innerHTML = resultado.toFixed(3) + "cm.";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function triangulo(lado1, lado2, ladoBase){
-    const perimetroTriangulo = lado1 + lado2 + ladoBase;
-    const altura = Math.sqrt(Math.pow(lado2, 2) - Math.pow((ladoBase / 2), 2));
-    console.log(altura);
-    const area = (ladoBase * altura) / 2;
-}
-function circulo(radio){
-    const diametro = radio * 2;
-    const PI = Math.PI;
-    const circunferencia = diametro * PI;
-    const areaCirculo = (radio * radio) * PI;
-}
-
-
-
