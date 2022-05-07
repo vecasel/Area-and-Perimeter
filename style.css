@@ -7,6 +7,10 @@ html{
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin: 1rem 30rem;
+    border: solid black 1rem;
+}
 .header__container{
     display: flex;
     justify-content: center;
@@ -29,6 +33,8 @@ html{
     width: 100%;
     height: 20rem;
     flex-wrap: wrap;
+    background-color: #006E7F;
+    margin: 1rem 0;
 }
 .square__section__title{
     text-align: center;
@@ -99,8 +105,9 @@ html{
     align-items: center;
     width: 100%;
     height: 5rem;
-    margin: 2rem 0;
+    margin: 2rem 30rem;
     border: black solid 0.5rem;
+    background-color: white;
 }
 .square__section .result__section p{
     text-align: center;
@@ -111,6 +118,8 @@ html{
     width: 100%;
     height: 20rem;
     flex-wrap: wrap;
+    background-color: #7FB5FF;
+    margin: 1rem 0;
 }
 .triangle__section__title{
     text-align: center;
@@ -217,8 +226,9 @@ html{
     align-items: center;
     width: 100%;
     height: 5rem;
-    margin: 2rem 0;
+    margin: 2rem 30rem;
     border: black solid 0.5rem;
+    background-color: white;
 }
 .triangle__section .result__sectiont p{
     text-align: center;
@@ -229,6 +239,8 @@ html{
     width: 100%;
     height: 20rem;
     flex-wrap: wrap;
+    background-color: #79DAE8;
+    margin: 1rem 0;
 }
 .circle__section__title{
     text-align: center;
@@ -317,8 +329,9 @@ html{
     align-items: center;
     width: 100%;
     height: 5rem;
-    margin: 2rem 0;
+    margin: 2rem 30rem;
     border: black solid 0.5rem;
+    background-color: white;
 }
 .circle__section .result__sectionc p{
     text-align: center;

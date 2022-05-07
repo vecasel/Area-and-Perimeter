@@ -14,7 +14,7 @@ function areaCuadrado(){
 
 function perimetroTriangulo(){
     if (parseInt(document.getElementById("lado1t").value)  != parseInt(document.getElementById("lado2t").value)){
-        alert("No estás colocando un triángulo isóceles")
+        alert("No estás colocando un triángulo isósceles")
     }
     else{
         var resultado = parseInt(document.getElementById("lado1t").value) 
@@ -27,7 +27,7 @@ function perimetroTriangulo(){
 
 function alturaTriangulo(){
     if (parseInt(document.getElementById("lado1t").value)  != parseInt(document.getElementById("lado2t").value)){
-        alert("No estás colocando un triángulo isóceles")
+        alert("No estás colocando un triángulo isósceles");
     }
     else{
         var resultado = Math.sqrt(Math.pow(parseInt(document.getElementById("lado1t").value), 2) - Math.pow((parseInt(document.getElementById("lado3t").value) / 2),2));
@@ -38,9 +38,14 @@ function alturaTriangulo(){
 
 
 function areaTriangulo(){
-    var alturaTriangle = alturaTriangulo();
-    var resultadoArea = (document.getElementById("lado3t").value * alturaTriangle) / 2;
-    document.getElementById("print__triangle").innerHTML = resultadoArea.toFixed(3) + "cm.";
+    if (parseInt(document.getElementById("lado1t").value)  != parseInt(document.getElementById("lado2t").value)){
+        alert("No estás colocando un triángulo isósceles");
+    }
+    else{
+        var alturaTriangle = alturaTriangulo();
+        var resultadoArea = (document.getElementById("lado3t").value * alturaTriangle) / 2;
+        document.getElementById("print__triangle").innerHTML = resultadoArea.toFixed(3) + "cm.";
+    }
 }
 
 
